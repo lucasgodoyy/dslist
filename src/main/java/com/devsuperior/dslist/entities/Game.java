@@ -16,7 +16,7 @@ import jakarta.persistence.Table;
 
 public class Game {
 
-	@Id // config id sendo chabve primaria no banco
+	@Id // config id sendo chave primaria no banco
 	@GeneratedValue (strategy = GenerationType.IDENTITY)     // config para o id ser auto encrementado no banco de dados
 	
 	private Long id;
