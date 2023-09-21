@@ -2,6 +2,7 @@ package com.devsuperior.dslist.dto;  //classe para pegar dados especificos de ga
 
 import com.devsuperior.dslist.entities.Game;
 
+
 public class GameMinDTO {
 
 	private Long id;
