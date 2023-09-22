@@ -24,7 +24,7 @@ public class GameList {
 	}
 
 	public GameList(Long id, String name) {
-		super();
+		
 		this.id = id;
 		this.name = name;
 	}
@@ -42,7 +42,7 @@ public class GameList {
 	}
 
 	public void setName(String name) {
-		name = name;
+		this.name = name;
 	}
 
 	@Override

@@ -52,7 +52,7 @@ public class Game {
 		this.platforms = platforms;
 		this.score = score;
 		this.imgUrl = imgUrl;
-		ShortDescription = shortDescription;
+		this.ShortDescription = shortDescription;
 		this.longDescription = longDescription;
 	}
 
