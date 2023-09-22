@@ -32,7 +32,7 @@ public class GameMinDTO {
 		//using field
 		id = projection.getId(); //pega o idd da entidade e salva no id do dto 
 		title = projection.getTitle();
-		year = projection.getYear(); //Não precisa this. porque nao tem um parametro com mesmo nome
+		year = projection.getGameYear(); //Não precisa this. porque nao tem um parametro com mesmo nome
 		imgUrl = projection.getImgUrl();
 		ShortDescription = projection.getShortDescription();
 	}
