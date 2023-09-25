@@ -24,7 +24,7 @@ public class GameService {
 		Game result = gameRepository.findById(listId).get();
 		return new GameDTO(result);
 	}
-	
+	//metodo que busca os games da lista
 	@Transactional(readOnly = true)
 	public List<GameMinDTO> findAll() {
 		List<Game> result = gameRepository.findAll();
@@ -33,9 +33,9 @@ public class GameService {
 
 	@Transactional(readOnly = true)
 	public List<GameMinDTO> findByGameList(Long listId) {
-		List<GameMinProjection> games = gameRepository.searchByList(listId);
-		return games.stream().map(GameMinDTO::new).toList();
-		//return result.stream().map(x -> new GameMinDTO(x)).toList();
+		List<GameMinProjection> result = gameRepository.searchByList(listId);
+		//return games.stream().map(GameMinDTO::new).toList();
+		return result.stream().map(x -> new GameMinDTO(x)).toList();
 	}
 	
 	
